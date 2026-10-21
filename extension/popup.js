@@ -1,4 +1,4 @@
-const BACKEND_URL = "http://127.0.0.1:8000";
+const BACKEND_URL = "https://vidzyai.onrender.com";
 
 let currentVideoId = null;
 let isIndexing = false;
@@ -181,7 +181,7 @@ async function handleSendMessage() {
   } catch (err) {
     updateMessage(
       thinkingId,
-      `⚠️ Error: ${err.message}. Make sure your backend server is running on http://127.0.0.1:8000`
+      `⚠️ Error: ${err.message}. Make sure the VidzyAI backend is available.`
     );
   } finally {
     sendBtn.disabled = false;
@@ -241,4 +241,3 @@ function saveChatHistory(videoId) {
 
   chrome.storage.local.set({ [`chat_${videoId}`]: messages });
 }
-

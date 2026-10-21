@@ -11,8 +11,7 @@
   "host_permissions": [
     "https://www.youtube.com/*",
     "https://youtu.be/*",
-    "http://localhost:8000/*",
-    "http://127.0.0.1:8000/*"
+    "https://vidzyai.onrender.com/*"
   ],
   "action": {
     "default_popup": "popup.html",
@@ -29,4 +28,3 @@
     "128": "icons/icon128.png"
   }
 }
-
