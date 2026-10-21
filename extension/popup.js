@@ -1,3 +1,5 @@
+// This file is made with the help of AI.
+
 const BACKEND_URL = "https://vidzyai.onrender.com";
 
 let currentVideoId = null;

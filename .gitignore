@@ -154,7 +154,5 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
-
-SourceCode.ipynb
 .env
 *.env
