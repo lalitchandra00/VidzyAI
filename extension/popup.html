@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VidzyAI - YouTube Video AI Assistant</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo-container">
+      <div class="logo-badge">V</div>
+      <span class="logo-text">VidzyAI - YouTube Video AI Assistant</span>
+    </div>
+    <div id="status-badge" class="badge badge-waiting">Connecting...</div>
+  </header>
+
+  <!-- State 1: Not a YouTube Video -->
+  <section id="view-not-youtube" class="view hidden">
+    <div class="empty-state">
+      <div class="empty-icon">📺</div>
+      <h3>No Video Detected</h3>
+      <p>Open any YouTube video in your browser tab, then click the VidzyAI extension again.</p>
+    </div>
+  </section>
+
+  <!-- State 2: Active YouTube Video Detected -->
+  <section id="view-active-video" class="view">
+    <!-- Video Info & Indexing Bar -->
+    <div class="video-bar">
+      <div class="video-details">
+        <span class="label">Video ID:</span>
+        <span id="video-id-display" class="video-id">Detecting...</span>
+      </div>
+      <button id="reindex-btn" class="btn-subtle" title="Re-index video transcript">↻</button>
+    </div>
+
+    <!-- Indexing Status Banner -->
+    <div id="indexing-banner" class="banner banner-loading">
+      <div class="spinner"></div>
+      <span id="indexing-text">Fetching transcript and building embeddings...</span>
+    </div>
+
+    <!-- Chat Area -->
+    <div id="chat-messages" class="chat-messages">
+      <div class="message message-bot">
+        <div class="bubble">
+          👋 Hi! I'm VidzyAI - YouTube Video AI Assistant. Ask me anything about this video!
+        </div>
+      </div>
+    </div>
+
+    <!-- Quick Prompt Pills -->
+    <div id="quick-prompts" class="quick-prompts">
+      <button class="pill" data-prompt="Summarize this video in 3 key points.">📌 Summary</button>
+      <button class="pill" data-prompt="What are the key takeaways from this video?">💡 Takeaways</button>
+      <button class="pill" data-prompt="Explain the main topic discussed in simple terms.">🧠 Explain</button>
+    </div>
+
+    <!-- Input Box -->
+    <footer class="input-container">
+      <input 
+        type="text" 
+        id="user-input" 
+        placeholder="Ask a question about this video..." 
+        autocomplete="off"
+      />
+      <button id="send-btn" class="btn-send" title="Send Question">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+          <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+        </svg>
+      </button>
+    </footer>
+  </section>
+
+  <script src="popup.js"></script>
+</body>
+</html>
+
