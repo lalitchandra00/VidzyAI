@@ -10,3 +10,8 @@ fastembed
 python-dotenv==1.2.4
 langchain-openai==0.2.14
 tiktoken==0.14.0
+fastapi
+uvicorn
+fastapi
+uvicorn
+
