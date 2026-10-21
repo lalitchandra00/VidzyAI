@@ -11,7 +11,7 @@
   "host_permissions": [
     "https://www.youtube.com/*",
     "https://youtu.be/*",
-    "http://127.0.0.1:8000/*"
+    "https://vidzyai.onrender.com/*"
   ],
   "action": {
     "default_popup": "popup.html",
