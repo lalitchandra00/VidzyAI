@@ -2,6 +2,10 @@
 
 VidzyAI is a simple way to chat with YouTube videos using AI. Instead of watching an entire video or scrubbing through it to find something, you can just ask questions and get answers based on the video's content. 
 
+## Project Documentation
+
+- [Backend README](backend/README.md) - Backend setup, files, and how the transcript-processing pipeline works.
+
 ## What Does It Do?
 
 - **Chat with any YouTube video** - Open a YouTube video and ask it anything, just like you're talking to someone who watched it for you.
