@@ -5,7 +5,7 @@ VidzyAI is a simple way to chat with YouTube videos using AI. Instead of watchin
 ## Project Documentation
 
 - [Backend README](backend/README.md) - Backend setup, files, and how the transcript-processing pipeline works.
-- [Installation guide](installation/installation.md) - Instructions for installing the VidzyAI browser extension.
+- [Installation folder](installation/) - Installation resources for the VidzyAI browser extension.
 
 ## What Does It Do?
 
